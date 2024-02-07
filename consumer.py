@@ -82,10 +82,10 @@ try:
         current_short_ema, current_long_ema = calculate_ema(short_data), calculate_ema(long_data)
         rsi = calculate_rsi(long_data)
         trade_signal = "no action"
-        if is_buy(current_short_mean, current_long_mean, last_short_mean, last_long_mean): # and current_short_ema > current_long_ema and rsi < 30:
+        if is_buy(current_short_mean, current_long_mean, last_short_mean, last_long_mean) and current_short_ema > current_long_ema and rsi < 30:
             # generate buy signal
             trade_signal = "buy"
-        if is_sell(current_long_mean, current_short_mean, last_short_mean, last_long_mean): # and current_short_ema < current_long_ema and rsi > 70:
+        if is_sell(current_long_mean, current_short_mean, last_short_mean, last_long_mean) and current_short_ema < current_long_ema and rsi > 70:
             # generate sell signal
             trade_signal = "sell"
         analysed_data = {

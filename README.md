@@ -7,3 +7,8 @@ this data that was produced for different stocks. For this purpose, the data was
 In the next step, a program is run for each partition to calculate different indicators such as average, weighted average, and RSA, then in the next step,
 each indicator is sent to a partition of another Kafka topic, and finally, the user interface that is implemented with PYQT helps the end user in transactions
 by displaying prices and criteria and buying or selling signals.
+
+
+The project architecture is shown in the figure below
+
+![image](https://github.com/ahderakhshan/DS_project/assets/56085287/01522575-5c4f-4237-9fdc-13276d4519d5)

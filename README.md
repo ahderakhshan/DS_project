@@ -1,4 +1,6 @@
 **Distributed System Final Project**
+
+
 This project has been implemented as the final project of the distributed systems course in the fall semester of 1402.
 In this project, a generator starts to produce data in the form of financial data, and the main task of the students was to implement a scalable system to read and analyze
 this data that was produced for different stocks. For this purpose, the data was first read by a Flask code and sent to a partition of a Kafka topic according to the stock name.
